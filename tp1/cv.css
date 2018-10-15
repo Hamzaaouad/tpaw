@@ -10,7 +10,7 @@ a:hover{
 
     text-decoration-color:orange;
 }
-tr:nth-child{
+tr:nth-child(odd){
 
     background-color: blueviolet;
 
@@ -20,9 +20,8 @@ td:hover{
     background-color: crimson;
 
 }
-.image:hover{
-width: 120;
-height: 120;
+.image img:hover{
+    transform : scale(4);
 }
 
 
@@ -39,5 +38,12 @@ background-color: white;
     font-size:large;
     font-weight: bold;
     text-align:left              
+
+}
+
+@media only screen and (max-width: 500px){
+    table{
+        background-color:yellow;
+    }
 
 }
