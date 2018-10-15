@@ -1,3 +1,4 @@
+
 body{
     background-color:#e9ebee;              
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -9,7 +10,7 @@ a:hover{
 
     text-decoration-color:orange;
 }
-.nth-child{
+tr:nth-child{
 
     background-color: blueviolet;
 
