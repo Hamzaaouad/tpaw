@@ -1,6 +1,6 @@
 #error{
     background-color:pink;
-    padding: 20px;
+    padding: 5px;
     border: 1px black solid;
     margin-left: 25%;
     margin-right: 25%;
@@ -8,7 +8,7 @@
 
 #resultat{
     background-color:green;
-    padding: 20px;
+    padding: 5px;
     color: white;
     margin-left: 25%;
     margin-right: 25%;
@@ -27,6 +27,6 @@ h1{
 }
 #space{
     background-color:gray;
-    padding: 20px;
+    padding: 5px;
     
 }
