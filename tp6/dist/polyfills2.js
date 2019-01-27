@@ -5434,7 +5434,7 @@ __webpack_require__.r(__webpack_exports__);
  * Learn more in https://angular.io/guide/browser-support
  */
 /***************************************************************************************************
- * BROWSER POLYFILLS
+ * BROWSER 
  */
 /** IE9, IE10, IE11, and Chrome <55 requires all of the following polyfills.
  *  This also includes Android Emulators with older versions of Chrome and Google Search/Googlebot
@@ -5511,4 +5511,4 @@ module.exports = __webpack_require__(/*! C:\Users\ahcene\Documents\GitHub\tpaw\t
 /***/ })
 
 },[[1,"runtime"]]]);
-//# sourceMappingURL=polyfills.js.map
+//# sourceMappingURL=polyfills2.js.map
