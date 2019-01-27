@@ -47,7 +47,7 @@ const appRoutes: Routes = [
     RouterModule
    
   ],
-  providers: [MeteoService],
+  providers: [],
   bootstrap: [AppComponent]
 
 })
