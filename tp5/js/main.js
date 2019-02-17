@@ -13,7 +13,7 @@ window.onload = function () {
 
             // liste des villes saisies, initialiser avec Paris
             cityList: [{
-                name : 'Paris'
+                name : ''
             }],
 
             // cityWeather contiendra les données météo reçus par openWeatherMap
@@ -106,7 +106,7 @@ window.onload = function () {
                                                     // test du code retour
                                                     // 200 = OK
                                                     // 404 = city not found 
-                                                    if(json.cod === 200){
+                                                    if((json.cod === 200)&&(app.cityList.length>0)){
                                                         // on met la réponse du webservice dans la variable cityWeather
                                                         app.cityWeather = json;
                                                         app.message = null;
@@ -128,4 +128,6 @@ window.onload = function () {
 
 
     });
+    
+     document.getElementById("supprimerchargement").click();
 }
