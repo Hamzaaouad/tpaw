@@ -73,6 +73,7 @@ $( document ).ready(function() {
             });
             $("#Prenom").keydown(function(){
                 if(($("#Prenom").val().length < 5))
+                {
                 $("Prenom").css("border-color","#ff0000");
                 }
                 else
