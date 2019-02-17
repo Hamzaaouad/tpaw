@@ -4,69 +4,118 @@ $( document ).ready(function() {
      console.log( "DOM ready!" );
       
 
-            $(document).keyup(function(){
-
-                valid=false;
-                if(($("#nom").val().length < 5) && ($("#Prenom").val().length < 5) && ($("#datedenaissance").val().length < 5) &&  ($("#Adresse").val().length < 5) &&  ($("#email").val().length < 5))
+            $("#nom").keyup(function(){
+                if(($("#nom").val().length < 5))
                 {
                     $("#nom").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#nom").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#Prenom").keyup(function(){
+                if(($("#Prenom").val().length < 5))
+                {
                     $("#Prenom").css("border-color","#48DE14");
-                    $("#datedenaissance").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("Prenom").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#Adresse").keyup(function(){
+                if(($("#Adresse").val().length < 5))
+                {
                     $("#Adresse").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#Adresse").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#datedenaissance").keyup(function(){
+                if(($("#datedenaissance").val().length < 5))
+                {
+                    $("#datedenaissance").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#datedenaissance").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#email").keyup(function(){
+                if(($("#email").val().length < 5))
+                {
                     $("#email").css("border-color","#48DE14");
                 }
-                else 
+                else
                 {
-                    if($("#Prenom").val().length >= 5 ){
-                       $("#Prenom").css("border-color","#ff0000");
-                       valid=true;
-                    }
-
-                    else
-                    {
-                        if($("#datedenaissance").val() >= 5 ){
-                            $("#datedenaissance").css("border-color","#ff0000");
-                            valid=true;
-                        }
-                        else
-                        {
-                            if($("#Adresse").val().length >= 5 ){
-                                $("#Adresse").css("border-color","#ff0000");
-                                valid=true;
-                            }
-
-                            else{
-                                
-                                if($("#email").val().length >= 5 ){
-                                    $("#email").css("border-color","#ff0000");
-                                    valid=true;
-                                }
-
-                                else {
-                                if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5) && ($("#email").val().length >= 5))
-                                { $("#nom").css("border-color","#ff0000");
-                                $("#Prenom").css("border-color","#ff0000");
-                                $("#datedenaissance").css("border-color","#ff0000");
-                                $("#Adresse").css("border-color","#ff0000");
-                                $("#email").css("border-color","#ff0000");
-                                valid=true;
-                                }
-
-                                }
-
-                            }
-                           
-                        }
-                    }
-                                    
-                }                         
-                                
-
-            return valid;                   
-                    
-          
-
+                    $("#email").css("border-color","#ff0000");
+                }
+            
             });
+
+            $("#nom").keydown(function(){
+                if(($("#nom").val().length < 5))
+                {
+                    $("#nom").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#nom").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#Prenom").keydown(function(){
+                if(($("#Prenom").val().length < 5))
+                {
+                    $("#Prenom").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("Prenom").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#Adresse").keydown(function(){
+                if(($("#Adresse").val().length < 5))
+                {
+                    $("#Adresse").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#Adresse").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#datedenaissance").keydown(function(){
+                if(($("#datedenaissance").val().length < 5))
+                {
+                    $("#datedenaissance").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#datedenaissance").css("border-color","#ff0000");
+                }
+            
+            });
+            $("#email").keydown(function(){
+                if(($("#email").val().length < 5))
+                {
+                    $("#email").css("border-color","#48DE14");
+                }
+                else
+                {
+                    $("#email").css("border-color","#ff0000");
+                }
+            
+            });
+
 
 
             $("#envoyer").on("click", function (event) {
