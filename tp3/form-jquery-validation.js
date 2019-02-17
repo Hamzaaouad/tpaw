@@ -47,7 +47,7 @@ $( document ).ready(function() {
                                 $("#Prenom").css("border-color","#48DE14");
                                 $("#datedenaissance").css("border-color","#48DE14");
                                 $("#Adresse").css("border-color","#48DE14");
-                                $("#email").css("border-color","#48DE14");}
+                                $("#email").css("border-color","#48DE14");
 
                                 }
 
@@ -139,4 +139,5 @@ $( document ).ready(function() {
         
     });
     
-
+});
+    
