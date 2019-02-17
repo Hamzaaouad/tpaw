@@ -6,7 +6,6 @@ $( document ).ready(function() {
 
             $(document).keyup(function(){
 
-                var valid = true ;
 
                 if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5))
                 {
@@ -19,27 +18,27 @@ $( document ).ready(function() {
                 else 
                 {
                     if($("#Prenom").val().length < 5 ){
-                        $("#Prenom").css("border-color","#ff0000");
-                        valid=false;
+                       $("#Prenom").css("border-color","#ff0000");
+                     
                     }
 
                     else
                     {
                         if($("#datedenaissance").val().length < 5 ){
-                            valid=false;
+                     
                         }
                         else
                         {
                             if($("#Adresse").val().length < 5 ){
                                 $("#Adresse").css("border-color","#ff0000");
-                                valid=false;
+                          
                             }
 
                             else{
                                 
                                 if($("#email").val().length < 5 ){
                                     $("#email").css("border-color","#ff0000");
-                                    valid=false;
+                          
                                 }
 
                                 else {
@@ -62,7 +61,7 @@ $( document ).ready(function() {
 
                                 
                     
-               , valid)
+          
 
             });
 
