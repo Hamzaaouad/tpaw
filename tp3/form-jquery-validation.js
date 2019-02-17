@@ -11,7 +11,6 @@ $( document ).ready(function() {
                     $("#nom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le nom doit contenir 5 caractères ! ");
-                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -21,7 +20,6 @@ $( document ).ready(function() {
                     $("#Prenom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le Prénom doit contenir 5 caractères ! ");
-                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -31,7 +29,6 @@ $( document ).ready(function() {
                     $("#datedenaissance").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" La date de naissance doit contenir 5 caractères ! ");
-                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -41,7 +38,6 @@ $( document ).ready(function() {
                     $("#Adresse").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse doit contenir 5 caractères ! ");
-                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -51,7 +47,6 @@ $( document ).ready(function() {
                     $("#email").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse mail doit contenir 5 caractères ! ");
-                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
