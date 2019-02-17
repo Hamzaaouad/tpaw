@@ -6,52 +6,52 @@ $( document ).ready(function() {
 
             $(document).keyup(function(){
 
-                valid = false ;
+                valid = true ;
                 if($("#nom").val().length < 5 ){
-                    $("#nom").css("border-color","#ff0000");
+                    //$("#nom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le nom doit contenir 5 caractères ! ");
-                    valid=true;
+                    valid=false;
                 }
                 else{
-                    $("#nom").css("border-color","#48DE14");
+                    //$("#nom").css("border-color","#48DE14");
                 }
                 if($("#Prenom").val().length < 5 ){
-                    $("#Prenom").css("border-color","#ff0000");
+                    //$("#Prenom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le Prénom doit contenir 5 caractères ! ");
-                    valid=true;
+                    valid=false;
                 }
                 else{
                     $("#Prenom").css("border-color","#48DE14");
                 }
                 if($("#datedenaissance").val().length < 5 ){
-                    $("#datedenaissance").css("border-color","#ff0000");
+                    //$("#datedenaissance").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" La date de naissance doit contenir 5 caractères ! ");
-                    valid=true;
+                    valid=false;
                 }
                 else{
-                    $("#datedenaissance").css("border-color","#48DE14");
+                    //$("#datedenaissance").css("border-color","#48DE14");
                 }
                 if($("#Adresse").val().length < 5 ){
-                    $("#Adresse").css("border-color","#ff0000");
+                    //$("#Adresse").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse doit contenir 5 caractères ! ");
-                    valid=true;
+                    valid=false;
                 }
                 else{
                     $("#Adresse").css("border-color","#48DE14");
                 }
                 if($("#email").val().length < 5 ){
-                    $("#email").css("border-color","#ff0000");
+                    //$("#email").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse mail doit contenir 5 caractères ! ");
-                    valid=true;
+                    valid=false;
                 }
                 else{
                     
-                    $("#email").css("border-color","#48DE14");
+                    //$("#email").css("border-color","#48DE14");
                 }
 
                 $('#myModal').modal("show");
