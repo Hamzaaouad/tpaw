@@ -7,7 +7,7 @@ $( document ).ready(function() {
             $(document).keyup(function(){
 
                 valid = false ;
-                if{
+                if($("#nom").val().length < 5 ){
                     $("#nom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le nom doit contenir 5 caractères ! ");
