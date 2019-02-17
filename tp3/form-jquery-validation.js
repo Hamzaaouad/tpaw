@@ -9,6 +9,9 @@ $( document ).ready(function() {
                 valid = true ;
                 if($("#nom").val().length < 5 ){
                     $("#nom").css("border-color","#ff0000");
+                    $(".modal-title").html("Veuillez remplir tout les champs SVP !");
+                    $(".modal-body").text(" Le nom doit contenir 5 caractères ! ");
+                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -16,6 +19,9 @@ $( document ).ready(function() {
                 }
                 if($("#Prenom").val().length < 5 ){
                     $("#Prenom").css("border-color","#ff0000");
+                    $(".modal-title").html("Veuillez remplir tout les champs SVP !");
+                    $(".modal-body").text(" Le Prénom doit contenir 5 caractères ! ");
+                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -23,6 +29,9 @@ $( document ).ready(function() {
                 }
                 if($("#datedenaissance").val().length < 5 ){
                     $("#datedenaissance").css("border-color","#ff0000");
+                    $(".modal-title").html("Veuillez remplir tout les champs SVP !");
+                    $(".modal-body").text(" La date de naissance doit contenir 5 caractères ! ");
+                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -30,6 +39,9 @@ $( document ).ready(function() {
                 }
                 if($("#Adresse").val().length < 5 ){
                     $("#Adresse").css("border-color","#ff0000");
+                    $(".modal-title").html("Veuillez remplir tout les champs SVP !");
+                    $(".modal-body").text(" L'adresse doit contenir 5 caractères ! ");
+                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
@@ -37,6 +49,9 @@ $( document ).ready(function() {
                 }
                 if($("#email").val().length < 5 ){
                     $("#email").css("border-color","#ff0000");
+                    $(".modal-title").html("Veuillez remplir tout les champs SVP !");
+                    $(".modal-body").text(" L'adresse mail doit contenir 5 caractères ! ");
+                    $("#myModal").modal("show");
                     valid=false;
                 }
                 else{
