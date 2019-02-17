@@ -6,17 +6,17 @@ $(document).ready(function() {
                 
     
         $("#envoyer").on("click", function (event) {
-            $('#myModal').modal("show");
+
             event.preventDefault();
             $(document).keyup(function(){
 
-                valid = true ;
 
                 if($("#nom").val().length == 0 ){
                     $("#nom").css("border-color","red");
                     $(".modal-title").text(" Attention : erreur de saisie ");
                     $(".modal-body").html("Le champs nom est vide. Veuillez le remplir !");
-                    valid=false;
+                    $("#myModal").modal("show");
+
                 }
 
                 else 
@@ -24,14 +24,14 @@ $(document).ready(function() {
                     $("#nom").css("border-color","red");
                     $(".modal-title").text(" Attention : erreur de saisie ");
                     $(".modal-body").html("Le champs nom doit contenir au moins 5 caractères !");
-                    valid=false;
+                    $("#myModal").modal("show");    
                     }
                     else
                     if($("#Prenom").val().length < 5 ){
                         $("#Prenom").css("border-color","red");
                         $(".modal-title").text(" Attention : erreur de saisie ");
                         $(".modal-body").html("Le champs Prénom doit contenir au moins 5 caractères !");
-                        valid=false;
+                        $("#myModal").modal("show");
                         }
                         
     
@@ -40,28 +40,28 @@ $(document).ready(function() {
                             $("#Prenom").css("border-color","red");
                             $(".modal-title").text(" Attention : erreur de saisie ");
                             $(".modal-body").html("Le champs Prénom est vide. Veuillez le remplir !");
-                            valid=false;
+                            $("#myModal").modal("show");
                             }
                             else
                                 if($("#datedenaissance").val().length<5){
                                     $("#datedenaissance").css("border-color","red");
                                     $(".modal-title").text(" Attention : erreur de saisie ");
                                     $(".modal-body").html("Le champs Date de naissance doit contenir au moins 5 caractères !");
-                                    valid=false;
+                                    $("#myModal").modal("show");
                                     }
                                     else
                                         if($("#datedenaissance").val().length == 0 ){
                                         $("#datedenaissance").css("border-color","red");
                                         $(".modal-title").text(" Attention : erreur de saisie ");
                                         $(".modal-body").html("Le champs Date de naissance est vide. Veuillez le remplir !");
-                                        valid=false;
+                                        $("#myModal").modal("show");
                                         }
                                         else
                                             if($("#Adresse").val().length == 0 ){
                                                 $("#Adresse").css("border-color","red");
                                                 $(".modal-title").text(" Attention : erreur de saisie ");
                                                 $(".modal-body").html("Le champs Adresse est vide. Veuillez le remplir !");
-                                                valid=false;
+                                                $("#myModal").modal("show");
                                                 }
                             
                                                 else 
@@ -69,14 +69,14 @@ $(document).ready(function() {
                                                     $("#Adresse").css("border-color","red");
                                                     $(".modal-title").text(" Attention : erreur de saisie ");
                                                     $(".modal-body").html("Le champs Adresse doit contenir au moins 5 caractères !");
-                                                    valid=false;
+                                                    $("#myModal").modal("show");
                                                     }
                                                     else
                                                         if($("#email").val().length == 0 ){
                                                             $("#email").css("border-color","red");
                                                             $(".modal-title").text(" Attention : erreur de saisie ");
                                                             $(".modal-body").html("Le champs Email est vide. Veuillez le remplir !");
-                                                            valid=false;
+                                                            $("#myModal").modal("show");
                                                             }
                                         
                                                             else 
@@ -84,7 +84,7 @@ $(document).ready(function() {
                                                                 $("#email").css("border-color","red");
                                                                 $(".modal-title").text(" Attention : erreur de saisie ");
                                                                 $(".modal-body").html("Le champs email doit contenir au moins 5 caractères !");
-                                                                valid=false;
+                                                                $("#myModal").modal("show");
                                                                 }
                                                                 else
                                                                 {
