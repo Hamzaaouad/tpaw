@@ -43,7 +43,7 @@ $( document ).ready(function() {
                                 }
 
                                 else {
-                                if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5) && &&  ($("#email").val().length >= 5))
+                                if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5) && ($("#email").val().length >= 5))
                                 { $("#nom").css("border-color","#ff0000");
                                 $("#Prenom").css("border-color","#ff0000");
                                 $("#datedenaissance").css("border-color","#ff0000");
