@@ -7,7 +7,7 @@ $( document ).ready(function() {
             $(document).keyup(function(){
 
                 valid=true;
-                if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5))
+                if(($("#nom").val().length < 5) && ($("#Prenom").val().length < 5) && ($("#datedenaissance").val().length < 5) &&  ($("#Adresse").val().length < 5))
                 {
                     $("#nom").css("border-color","#48DE14");
                     $("#Prenom").css("border-color","#48DE14");
@@ -17,26 +17,27 @@ $( document ).ready(function() {
                 }
                 else 
                 {
-                    if($("#Prenom").val().length < 5 ){
+                    if($("#Prenom").val().length >= 5 ){
                        $("#Prenom").css("border-color","#ff0000");
-                     
+                       valid=false;
                     }
 
                     else
                     {
-                        if($("#datedenaissance").val().length < 5 ){
-                     
+                        if($("#datedenaissance").val() >= 5 ){
+                            $("#datedenaissance").css("border-color","#ff0000");
+                            valid=false;
                         }
                         else
                         {
-                            if($("#Adresse").val().length < 5 ){
+                            if($("#Adresse").val().length >= 5 ){
                                 $("#Adresse").css("border-color","#ff0000");
                           
                             }
 
                             else{
                                 
-                                if($("#email").val().length < 5 ){
+                                if($("#email").val().length >= 5 ){
                                     $("#email").css("border-color","#ff0000");
                           
                                 }
@@ -59,7 +60,7 @@ $( document ).ready(function() {
                 }                         
                                 
 
-                                
+            return valid;                   
                     
           
 
