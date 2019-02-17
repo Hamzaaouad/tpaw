@@ -6,12 +6,12 @@ $( document ).ready(function() {
 
             $(document).keyup(function(){
 
-                valid = true ;
+                valid = false ;
                 if($("#nom").val().length < 5 ){
                     $("#nom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le nom doit contenir 5 caractères ! ");
-                    valid=false;
+                    valid=true;
                 }
                 else{
                     $("#nom").css("border-color","#48DE14");
@@ -20,7 +20,7 @@ $( document ).ready(function() {
                     $("#Prenom").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" Le Prénom doit contenir 5 caractères ! ");
-                    valid=false;
+                    valid=true;
                 }
                 else{
                     $("#Prenom").css("border-color","#48DE14");
@@ -29,7 +29,7 @@ $( document ).ready(function() {
                     $("#datedenaissance").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" La date de naissance doit contenir 5 caractères ! ");
-                    valid=false;
+                    valid=true;
                 }
                 else{
                     $("#datedenaissance").css("border-color","#48DE14");
@@ -38,7 +38,7 @@ $( document ).ready(function() {
                     $("#Adresse").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse doit contenir 5 caractères ! ");
-                    valid=false;
+                    valid=true;
                 }
                 else{
                     $("#Adresse").css("border-color","#48DE14");
@@ -47,7 +47,7 @@ $( document ).ready(function() {
                     $("#email").css("border-color","#ff0000");
                     $(".modal-title").html("Veuillez remplir tout les champs SVP !");
                     $(".modal-body").text(" L'adresse mail doit contenir 5 caractères ! ");
-                    valid=false;
+                    valid=true;
                 }
                 else{
                     $("#email").css("border-color","#48DE14");
