@@ -7,55 +7,55 @@ $( document ).ready(function() {
             $("#nom").keyup(function(){
                 if(($("#nom").val().length < 5))
                 {
-                    $("#nom").css("border-color","#48DE14");
+                    $("#nom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#nom").css("border-color","#ff0000");
+                    $("#nom").css("border-color","#48DE14");
                 }
             
             });
             $("#Prenom").keyup(function(){
                 if(($("#Prenom").val().length < 5))
                 {
-                    $("#Prenom").css("border-color","#48DE14");
+                    $("#Prenom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("Prenom").css("border-color","#ff0000");
+                    $("Prenom").css("border-color","#48DE14");
                 }
             
             });
             $("#Adresse").keyup(function(){
                 if(($("#Adresse").val().length < 5))
                 {
-                    $("#Adresse").css("border-color","#48DE14");
+                    $("#Adresse").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#Adresse").css("border-color","#ff0000");
+                    $("#Adresse").css("border-color","#48DE14");
                 }
             
             });
             $("#datedenaissance").keyup(function(){
                 if(($("#datedenaissance").val().length < 5))
                 {
-                    $("#datedenaissance").css("border-color","#48DE14");
+                    $("#datedenaissance").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#datedenaissance").css("border-color","#ff0000");
+                    $("#datedenaissance").css("border-color","#48DE14");
                 }
             
             });
             $("#email").keyup(function(){
                 if(($("#email").val().length < 5))
                 {
-                    $("#email").css("border-color","#48DE14");
+                    $("#email").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#email").css("border-color","#ff0000");
+                    $("#email").css("border-color","#48DE14");
                 }
             
             });
@@ -63,55 +63,54 @@ $( document ).ready(function() {
             $("#nom").keydown(function(){
                 if(($("#nom").val().length < 5))
                 {
-                    $("#nom").css("border-color","#48DE14");
+                    $("#nom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#nom").css("border-color","#ff0000");
+                    $("#nom").css("border-color","#48DE14");
                 }
             
             });
             $("#Prenom").keydown(function(){
                 if(($("#Prenom").val().length < 5))
-                {
-                    $("#Prenom").css("border-color","#48DE14");
+                $("Prenom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("Prenom").css("border-color","#ff0000");
+                    $("Prenom").css("border-color","#48DE14");
                 }
             
             });
             $("#Adresse").keydown(function(){
                 if(($("#Adresse").val().length < 5))
                 {
-                    $("#Adresse").css("border-color","#48DE14");
+                    $("#Adresse").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#Adresse").css("border-color","#ff0000");
+                    $("#Adresse").css("border-color","#48DE14");
                 }
             
             });
             $("#datedenaissance").keydown(function(){
                 if(($("#datedenaissance").val().length < 5))
                 {
-                    $("#datedenaissance").css("border-color","#48DE14");
+                    $("#datedenaissance").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#datedenaissance").css("border-color","#ff0000");
+                    $("#datedenaissance").css("border-color","#48DE14");
                 }
             
             });
             $("#email").keydown(function(){
                 if(($("#email").val().length < 5))
                 {
-                    $("#email").css("border-color","#48DE14");
+                    $("#email").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("#email").css("border-color","#ff0000");
+                    $("#email").css("border-color","#48DE14");
                 }
             
             });
