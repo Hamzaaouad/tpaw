@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
             $(document).keyup(function(){
 
-
+                valid=true;
                 if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5))
                 {
                     $("#nom").css("border-color","#ff0000");
@@ -56,7 +56,7 @@ $( document ).ready(function() {
                         }
                     }
                                     
-                                            
+                }                         
                                 
 
                                 
@@ -138,6 +138,6 @@ $( document ).ready(function() {
                 
         
     });
-    
+  });
 
     
