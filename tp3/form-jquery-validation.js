@@ -7,7 +7,7 @@ $( document ).ready(function() {
             $(document).keyup(function(){
 
                 valid=false;
-                if(($("#nom").val().length < 5) && ($("#Prenom").val().length < 5) && ($("#datedenaissance").val().length < 5) &&  ($("#Adresse").val().length < 5))
+                if(($("#nom").val().length < 5) && ($("#Prenom").val().length < 5) && ($("#datedenaissance").val().length < 5) &&  ($("#Adresse").val().length < 5) &&  ($("#email").val().length < 5))
                 {
                     $("#nom").css("border-color","#48DE14");
                     $("#Prenom").css("border-color","#48DE14");
@@ -43,13 +43,14 @@ $( document ).ready(function() {
                                 }
 
                                 else {
-                                
-                                $("#nom").css("border-color","#ff0000");
+                                if(($("#nom").val().length >= 5) && ($("#Prenom").val().length >= 5) && ($("#datedenaissance").val().length >= 5) &&  ($("#Adresse").val().length >= 5) && &&  ($("#email").val().length >= 5))
+                                { $("#nom").css("border-color","#ff0000");
                                 $("#Prenom").css("border-color","#ff0000");
                                 $("#datedenaissance").css("border-color","#ff0000");
                                 $("#Adresse").css("border-color","#ff0000");
                                 $("#email").css("border-color","#ff0000");
                                 valid=true;
+                                }
 
                                 }
 
