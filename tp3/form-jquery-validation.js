@@ -55,6 +55,7 @@ $( document ).ready(function() {
                     valid=true;
                 }
                 else{
+                    
                     $("#email").css("border-color","#48DE14");
                 }
 
