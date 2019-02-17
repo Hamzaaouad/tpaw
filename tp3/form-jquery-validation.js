@@ -74,11 +74,11 @@ $( document ).ready(function() {
             $("#Prenom").keydown(function(){
                 if(($("#Prenom").val().length < 5))
                 {
-                $("Prenom").css("border-color","#ff0000");
+                $("#Prenom").css("border-color","#ff0000");
                 }
                 else
                 {
-                    $("Prenom").css("border-color","#48DE14");
+                    $("#Prenom").css("border-color","#48DE14");
                 }
             
             });
